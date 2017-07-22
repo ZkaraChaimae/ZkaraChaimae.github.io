@@ -1,0 +1,481 @@
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+/******************************** body of the game **********************/
+
+#begincontent {
+    position: relative;
+    background-color: #f2d854;
+    height: 100%;
+}
+#gamecontent {
+    position: relative;
+    background-image: url('../photos/salon2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+#endcontent {
+    position: relative;
+    background-color: #f2d854;
+    height: 100%;
+}
+#leftdiv {
+    float: left;
+    width: 75%;
+    position: absolute;
+    height: 100%
+}
+#rightdiv {
+    float: right;
+    left: 75%;
+    width: 25%;
+    position: absolute;
+    background-image: url('../photos/zelij.jpg');
+    background-repeat: repeat;
+    height: 100%;
+}
+#eddekka{
+    display: block;
+    position: relative;
+    background-color: #f2d854;
+    height: 100%;
+}
+#l3eb{
+    display: none;
+}
+
+/****************  affichage du tableau score ******************/
+.textWhite {
+    display: inline-block;
+    width: 100px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 5em;
+    color: #fff;
+    opacity: 1;
+}
+
+#affichScore {
+    float: right;
+    /*font-weight: 200;*/
+}
+
+
+/*********************** rotate class useful to add to a berad ******/
+
+.toRotate {
+    transform: rotate(-45deg);
+}
+
+.toLeft {
+    transform: rotate(-10deg);
+}
+
+.toRight {
+    transform: rotate(45deg);
+}
+
+
+/********************  class usful to hide pouring atay ********/
+
+.atay {
+    display: none;
+}
+
+#map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+/********************** cup position ***********************************/
+
+#player {
+    float: left;
+    position: absolute;
+    top: 83%;
+    left: 5%;
+}
+
+
+/************************ berared positions **************************/
+
+#berad1 {
+    position: absolute;
+    top: 0%;
+    left: 15%;
+}
+
+#berad2 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+#berad3 {
+    position: absolute;
+    top: 0%;
+    left: 85%;
+}
+
+
+/***************************** atay pouring images ************************/
+
+#atay1 {
+    position: absolute;
+    top: 110px;
+    left: 15%;
+    height: 75%;
+}
+
+#atay2 {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    height: 75%;
+}
+
+#atay3 {
+    position: absolute;
+    top: 110px;
+    left: 85%;
+    height: 75%;
+}
+
+
+
+
+/*********** text welcome CSS *************/
+#load{
+
+    /*width: 25%;*/
+    position: absolute;
+    bottom: 40%;
+    right: 40%;
+    display: none;
+}
+#input {
+    /*background-image: url("../photos/searchicon.png");*/
+    background-position: 10px 10px;
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #f2d854;
+    margin-bottom: 12px;
+}
+#connex{
+    width: 25%;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+
+#ameratay {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    left: 20%;
+    top: 4%;
+}
+#salam{
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    color: #f2d854;
+}
+.step2,
+.step3,
+.step4,
+.stepF,
+#helloGame{
+    display: none;
+    position: absolute;
+}
+.step1{
+    position: absolute;
+}
+#douz{
+    top: 2%;
+    left: 76%;
+}
+
+.text-welcome-fly {
+    list-style: none;
+    position: absolute;
+    margin-left: 10px;
+    left: 25%;
+    top: 25%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: Verdana, Geneva, sans-serif;
+}
+#connex{
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.text-welcome-fly li {
+    margin-right: 5px;
+    margin-right: 5px;
+    /*font-family: sans-serif;*/
+    font-weight: 300;
+    font-size: 6em;
+    /*color: white;*/
+    opacity: 1;
+    transition: all 2s ease;
+    display: inline-block;
+}
+.sfar{
+    color: #f2d854;
+}
+.byad{
+     color: white;
+     position: absolute;
+     top: 50%;
+     left: 30%;
+}
+.over{
+    /*position: absolute;*/
+    color: white;
+     font-weight: 150;
+    font-size: 3em;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+.logoOver{
+    color: white;
+     font-weight: 150;
+    font-size: 2.5em;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.text-welcome-fly li:last-child {
+    margin-right: 0;
+}
+
+.text-welcome-fly.hidden {
+    opacity: 0;
+}
+
+.text-welcome-fly.hidden li:nth-child(1) {
+    transform: translateX(-200px) translateY(-200px);
+}
+
+.text-welcome-fly.hidden li:nth-child(2) {
+    transform: translateX(-30px) translateY(300px);
+}
+
+.text-welcome-fly.hidden li:nth-child(3) {
+    transform: translateX(-150px) translateY(-80px);
+}
+
+.text-welcome-fly.hidden li:nth-child(4) {
+    transform: translateX(100px) translateY(-200px);
+}
+
+.text-welcome-fly.hidden li:nth-child(5) {
+    transform: translateX(-300px) translateY(200px);
+}
+
+.text-welcome-fly.hidden li:nth-child(6) {
+    transform: translateX(20px) translateY(20px);
+}
+
+.text-welcome-fly.hidden li:nth-child(7) {
+    transform: translateX(30px) translateY(-200px);
+}
+
+.text-welcome-fly.hidden li:nth-child(8) {
+    transform: translateX(75px) translateY(50px);
+}
+
+.text-welcome-fly.hidden li:nth-child(9) {
+    transform: translateX(-100px) translateY(-300px);
+}
+
+
+/************************** Style of Score **********************************/
+
+.scored {
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #f2d854;
+    opacity: 1;
+    text-shadow: 1px 1px 2px black, 0 0 25px #f2d854, 0 0 5px black;
+}
+/************************* component's position ************/
+.pos1{
+    left: 20%;
+    top: 20%;
+}
+.pos2{
+    left: 35%;
+    top: 22%;
+}
+.pos3{
+    left: 75%;
+    top: 25%;
+}
+.pos4{
+    left: 85%;
+    top: 20%;
+}
+.pos5{
+    left: 25%;
+    top: 40%;
+}
+.pos6{
+    left: 50%;
+    top: 50%;
+}
+.pos7{
+    left: 70%;
+    top: 40%;
+}
+.pos8{
+    left: 80%;
+    top: 75%;
+}
+.pos9{
+    left: 20%;
+    top: 75%;
+}
+.pos10{
+    left: 40%;
+    top: 75%;
+}
+.pos11{
+    left: 55%;
+    top: 80%;
+}
+.pos12{
+    left: 35%;
+    top: 82%;
+}
+.pos13{
+    left: 10%;
+    top: 80%;
+}
+
+/************************** style of buttons ********************************/
+
+.button {
+    background-color:  #4CAF50;
+    display: inline-block;
+    border: none;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    /*width: 150px;*/
+    font-size: 1.5rem;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#helloGame {
+    position: absolute;
+    /*top: 17%;*/
+    /*right: -20%;*/
+    /*bottom: 5%;*/
+    /*right: 10%;*/
+    background-color: #f2d854;
+    color: white;
+    border: 2px solid #f2d854;
+    float: right;
+}
+#replay{
+    display: none;
+}
+#replay,
+#endGame {
+    background-color: #f2d854;
+    color: white;
+    border: 2px solid #f2d854;
+    float: right;
+    right: 5%;
+    bottom: 0;
+    position: absolute;
+}
+#douz{
+    background-color: #f2d854;
+    color: white;
+    border: 2px solid #f2d854;
+    float: right;
+    /*right: 5%;*/
+    /*bottom: 0;*/
+    font-size: 1.5em;
+    position: absolute;
+}
+#douz:hover,
+#endGame:hover,
+#replay:hover,
+#helloGame:hover {
+    background-color: #fff;
+    color: #f2d854;
+}
+#stockUser{
+    background-color: #f2d854;
+    color: white;
+    border: 2px solid #f2d854;
+    float: right;
+    right: 5%;
+    bottom: 0;
+    font-size: 1.5em;
+    /*position: absolute;*/
+}
+#stockUser:hover{
+    background-color: #fff;
+    color: #f2d854;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/******************************* style of score table *****************/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 3px solid #f2d854;
+    text-align: left;
+    padding: 8px;
+}
